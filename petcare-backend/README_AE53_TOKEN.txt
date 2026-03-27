@@ -1,0 +1,1 @@
+Backend preparado para AE5.3 con autenticación por token (Sanctum).\n

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PetCare Frontend</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>PetCare API Client</h1>
+
+  <section class="card">
+    <h2>Login</h2>
+    <input type="email" id="email" placeholder="Email">
+    <input type="password" id="password" placeholder="Password">
+    <button id="loginBtn">Iniciar sesión</button>
+    <button id="logoutBtn">Cerrar sesión</button>
+    <p id="loginStatus"></p>
+  </section>
+
+  <section class="card">
+    <h2>Crear mascota</h2>
+    <input type="text" id="nombre" placeholder="Nombre">
+    <input type="text" id="especie" placeholder="Especie">
+    <input type="text" id="raza" placeholder="Raza">
+    <input type="number" id="edad" placeholder="Edad">
+    <input type="text" id="sexo" placeholder="Sexo">
+    <input type="number" step="0.1" id="peso" placeholder="Peso">
+    <input type="date" id="fecha_nacimiento" placeholder="Fecha nacimiento">
+    <input type="text" id="chip" placeholder="Chip">
+    <label><input type="checkbox" id="esterilizado"> Esterilizado</label>
+    <label><input type="checkbox" id="vacunado"> Vacunado</label>
+    <input type="text" id="observaciones" placeholder="Observaciones">
+    <button id="createPetBtn">Crear mascota</button>
+  </section>
+
+  <section class="card">
+    <h2>Listado de mascotas</h2>
+    <button id="loadPetsBtn">Cargar mascotas</button>
+    <ul id="petsList"></ul>
+  </section>
+
+  <script src="app.js"></script>
+</body>
+</html>

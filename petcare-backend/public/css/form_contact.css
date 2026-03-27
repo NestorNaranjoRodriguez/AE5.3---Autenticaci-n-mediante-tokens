@@ -1,0 +1,113 @@
+/* --- Estilos base --- */
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    background-color: #5dccff;
+    line-height: 1.6;
+}
+
+/* --- Sección del formulario --- */
+#contact {
+    padding: 60px 10%;
+    background-color: #fff;
+    margin: 40px auto;
+    max-width: 1200px;
+    border-radius: 16px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+}
+
+#contact h2 {
+    font-size: 2em;
+    color: #2b7a78;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+/* --- Estilos del formulario --- */
+#contact form {
+    max-width: 700px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+#contact label {
+    display: block;
+    margin-top: 1.2rem;
+    font-weight: 600;
+    color: #2b7a78;
+    font-size: 1.05em;
+}
+
+#contact input,
+#contact textarea,
+#contact select {
+    width: 100%;
+    padding: 0.75rem;
+    margin-top: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 1rem;
+    box-sizing: border-box;
+}
+
+#contact textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+#contact button {
+    width: 100%;
+    padding: 0.9rem;
+    margin-top: 1.5rem;
+    background: #ff4d4d;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.15em;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#contact button:hover {
+    background: #e43f3f;
+}
+
+/* Mensaje de éxito */
+.success-message {
+    color: green;
+    text-align: center;
+    margin-top: 1.2rem;
+    font-size: 1.1em;
+}
+
+/* --- Responsive --- */
+@media (max-width: 768px) {
+    .menusticky {
+        padding: 20px 5%;
+    }
+
+    .menusticky nav a {
+        padding: 8px 12px;
+        font-size: 0.95em;
+    }
+
+    #contact {
+        padding: 40px 5%;
+    }
+
+    #contact h2 {
+        font-size: 1.7em;
+    }
+
+    #contact label,
+    #contact input,
+    #contact textarea,
+    #contact select,
+    .success-message {
+        font-size: 1em;
+    }
+}
